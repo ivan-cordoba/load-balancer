@@ -1,0 +1,25 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "Simple Load Balancer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ivan-cordoba@github.com/ivan-cordoba/load-balancer.git"
+  },
+  "author": "Ivan Cordoba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-cordoba/load-balancer/issues"
+  },
+  "homepage": "https://github.com/ivan-cordoba/load-balancer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "newrelic": "^4.2.0"
+  }
+}

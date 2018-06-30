@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $('document').ready(() => {
+        $('#add-server').click((event) => {
+          const serverName = $('#server-name').val();
+          $('#server-name').val('');
+          $.ajax({
+            type: 'POST',
+            url: '/api/server',
+            contentType: 'application/json',
+            data: JSON.stringify({ serverName }),
+          });
+        });
+        $('#add-loader').click((event) => {
+          const loader = $('#loader').val();
+          $('#loader').val('');
+          $.ajax({
+            type: 'POST',
+            url: '/api/loaderio',
+            contentType: 'application/json',
+            data: JSON.stringify({ loader }),
+          });
+        });
+      });
+    </script>
+    <input id="server-name">
+    <button id="add-server">Add Server</button>
+    <br/>
+    <input id="loader">
+    <button id="add-loader">Add Loader</button>
+  </body>
+</html>
